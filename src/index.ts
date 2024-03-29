@@ -37,7 +37,6 @@ export class ReactNativeMIDIValAccess implements IMIDIAccess {
     private connectToEmmiter() {
         const emitter = new NativeEventEmitter(NativeModules.Midival);
         emitter.addListener('MidiEvent', (data) => {
-            console.log("Got message", data);
             this.listeners.trigger(data.source.toString(), {
                 data: data.data,
                 receivedTime: Date.now(),
