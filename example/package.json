@@ -14,7 +14,7 @@
     "@midival/core": "^0.0.16",
     "@react-native-community/picker": "^1.8.1",
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.69.12"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
